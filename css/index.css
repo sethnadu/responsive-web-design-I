@@ -254,6 +254,27 @@ nav a {
     }
 }
 
+@media (max-width: 500px) {
+    nav.services-page a {
+        border-top: .5px  black; 
+        border-bottom: .5px solid black; 
+        display: flex; 
+        flex-flow: row wrap; 
+        justify-items: center; 
+        width: 100%;
+        margin: 0; 
+        font-size: 20px; 
+        padding:20px; 
+        
+
+
+        
+
+    }
+}
+
+
+
 
 nav a:hover {
   color: rgb(176, 177, 178);
@@ -300,6 +321,7 @@ img {
         margin-right: 30%;
         margin-top: -83px;
         
+        
              
     }
     img {
@@ -307,6 +329,9 @@ img {
        
     }
 }
+
+
+
 
 .website-wrapper {
   width: 880px;
@@ -656,6 +681,18 @@ index.html's logo
   margin-right: -15px;
 }
 
+@media (max-width: 800px) {
+    .toplogo {
+        margin-top: -40px; 
+        display: flex; 
+    }
+}
+
+@media (max-width: 500px) {
+    .toplogo {
+        margin-top: 6px;
+    }
+}
 
 
 /* 
@@ -672,6 +709,22 @@ img.services-header-img {
   padding-right: 20px;
 }
 
+@media (max-width: 800px) {
+    img.services-header-img {
+        width: 90%;
+        display: flex; 
+        padding: 80px 20px 20px 20px; 
+
+
+    }
+}
+
+@media (max-width: 500px) {
+    img.services-header-img {
+        margin-top: 250px;
+        
+    }
+}
 
 
 /*
@@ -682,7 +735,7 @@ img.services-header-img {
 .heading-one is restyling the font of the h1 so it is bigger 
 */
 
-.seviceheader {
+.serviceheader {
   display: flex;
   align-content: center;
   flex-direction: column;
@@ -690,6 +743,13 @@ img.services-header-img {
   margin: auto;
   width: 890px;
 }
+
+@media (max-width: 800px) {
+    .serviceheader {
+        width: 90%
+    }
+}
+
 
 h1.heading-one {
   font-size: 150%;
@@ -702,6 +762,13 @@ hr.one {
   width: 880px;
   border: 0.5px solid black;
   margin-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+    hr.one {
+        width: 90%
+        
+    }
 }
 
 /*
@@ -725,6 +792,13 @@ are in the middle of the page. Is is split between the
   justify-content: ;
 }
 
+@media (max-width: 800px) {
+    .boxs-together {
+        width: 90%;
+    }
+}
+
+
 .box {
   border: 1px solid black;
   padding: 25px;
@@ -736,6 +810,23 @@ are in the middle of the page. Is is split between the
   height: 220px;
   width: 410px;
 }
+
+@media (max-width: 800px) {
+    .box {
+        width: 320px;
+        height: 270px;
+    
+    }
+}
+
+@media (max-width: 500px) {
+    .box {
+        background-color: gray; 
+    
+    }
+}
+
+
 
 /* 
 This is for the Learn More HREF designs 
@@ -752,6 +843,14 @@ This is for the Learn More HREF designs
   font-size: 12px;
   color: black;
 }
+  @media (max-width: 500px ) {
+      .learn-more {
+          color: white; 
+          background-color: black; 
+          border: 2px solid white;
+      }
+  }
+
 
 /*
 -----------------------------------------------------------------
@@ -772,13 +871,35 @@ hr.two {
   margin-top: 30px;
 }
 
+@media (max-width: 800px) {
+    hr.two {
+        width: 90%;
+        
+    }
+}
+
+
+
 .some-facts-together {
   display: flex;
-  flex-direction: row wrap;
+  flex-direction: row;
   width: 880px;
   margin: auto;
   padding-top: 20px;
 }
+
+@media (max-width: 800px) {
+    .some-facts-together {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .some-facts-together {
+        flex-direction: column;
+    }
+}
+
 
 .some-facts {
   display: flex;
