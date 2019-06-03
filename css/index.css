@@ -1,3 +1,946 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        width: 100%;
+    }
+}
+
+h2 {
+  font-family: "Anton", sans-serif;
+}
+
+
+
+.static-navbar {
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+  /* background-color: rgb(0, 93, 189); */
+  z-index: 5;
+}
+
+nav {
+  display: block;
+  width: 880px;
+  height: 80px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        margin: auto; 
+        padding-top: 40px; 
+        width: 100%; 
+
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 37px; 
+        padding-top: 40px; 
+        width: 100%; 
+        
+        
+
+    }
+}
+
+nav a {
+  text-decoration: none;
+  color: gray;
+  margin: 35px 31px 0 31px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+    nav a {
+        display: flex; 
+        flex-flow: row wrap; 
+        margin: auto;
+        margin-top: 60px;  
+        width: 100%;
+        justify-content: space-around;
+        font-size: 15px; 
+
+        
+
+    }
+}
+
+@media (max-width: 500px) {
+    nav a {
+        border-top: .5px solid black; 
+        border-bottom: .5px black; 
+        display: flex; 
+        flex-flow: row wrap; 
+        width: 100%;
+        margin: 0; 
+        font-size: 20px; 
+        padding:20px; 
+
+        
+
+    }
+}
+
+@media (max-width: 500px) {
+     .contacts {
+        
+        border-bottom: .5px black; 
+        
+
+        
+
+    }
+}
+
+nav a:hover {
+  color: rgb(176, 177, 178);
+}
+
+nav a:first-child {
+  margin-left: 0;
+}
+
+nav div {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+
+
+
+img {
+  margin-top: 25px;
+}
+
+@media (max-width: 768px) {
+    nav div {
+        display: flex; 
+        flex-direction: column;
+        align-items: center; 
+        margin-right: 35.5%;
+        margin-top: -30px;
+             
+    }
+    img {
+        display: flex; 
+       
+    }
+}
+
+
+@media (max-width: 500px) {
+    nav div {
+        display: flex; 
+        flex-direction: column;
+        align-items: center; 
+        margin-right: 30%;
+        margin-top: -83px;
+        
+             
+    }
+    img {
+        display: flex; 
+       
+    }
+}
+
+.website-wrapper {
+  width: 880px;
+  margin: 130px auto 0 auto;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .website-wrapper {
+        width: 768px; 
+    }
+}
+
+@media (max-width: 500px) {
+    .website-wrapper {
+        width: 500px; 
+    }
+}
+
+
+header {
+  border-bottom: 1px solid black;
+  position: relative;
+  height: 490px;
+}
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap; 
+        height: 470px;  
+        width: 728px; 
+        margin: -130px 20px 0 20px;
+        padding-bottom: 40px; 
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        display: flex;
+        justify-items: center;
+        flex-flow: column wrap; 
+        width: 460px; 
+        margin: 280px 0px 20px 20px;
+        padding:0 10px 40px 0; 
+        border-bottom: 2px solid black;
+    }
+}
+
+
+header div {
+  display: inline-block;
+  text-align: center;
+  margin: 70px 0 0 85px;
+}
+
+@media (max-width: 768px) {
+    header div {
+        margin-bottom: 30px;
+    }
+
+}
+
+header div h1 {
+  font-size: 80px;
+}
+
+@media (max-width: 768px) {
+    header div h1 {
+        font-size: 75px;
+        margin-right: 35px;
+        padding-bottom: 25px; 
+        
+    }
+}
+
+@media (max-width: 500px) {
+    header div h1 {
+        font-size: 73px;
+        display: flex;
+        flex-flow: column wrap; 
+        align-items: center; 
+        margin-right: 72px;
+        
+        
+    }
+}
+
+@media (max-width: 768px) {
+    header div a {
+        margin-right: 40px; 
+        padding-top: 80px; 
+    }
+}
+
+@media (max-width: 500px) {
+    header div a {
+        margin-right: 80px; 
+        padding-top: 60px; 
+    }
+}
+
+
+header div h1 span {
+  display: block;
+}
+
+header div a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 4px 48px;
+}
+
+header img {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+@media (max-width: 768px) {
+    header img {
+        display: none; }
+}
+
+.section-one {
+  margin-top: 39px;
+}
+
+@media (max-width: 768px) {
+    .section-one  {
+         padding: 0 20px 10px 20px; 
+         display: flex; 
+         width: 768px; 
+      }
+  }
+
+  @media (max-width: 500px) {
+    .section-one  {
+         padding: 0 10px 10px 10px; 
+         margin: 10px 10px 10px 10px;
+         display: flex; 
+         flex-flow: column wrap; 
+         width: 500px; 
+         
+      }
+  }
+
+
+.section-one div {
+  width: 430px;
+  height: 100px;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .section-one div {
+        padding: -5px 0 10px 0; 
+        margin: 10px 0;
+        font-size: 16px; 
+    }
+}
+
+@media (max-width: 500px) {
+    .section-one div {
+        margin: 20px 0 20px 0;  
+        padding: 10px;
+        font-size: 16px; 
+     
+    }
+}
+
+
+@media (max-width: 768px) {
+    .section-one div h2 {
+        font-weight: bold; 
+         
+    }
+}
+
+.section-one div p {
+  line-height: 1.16;
+}
+
+.section-one div:first-child {
+  margin-right: 10px;
+}
+
+.middle-img {
+  margin-top: 38px;
+}
+
+@media (max-width: 768px) {
+    .middle-img {
+        display: flex; 
+        width: 768px; 
+        padding: 0 20px 20px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .middle-img {
+        display: flex; 
+        width: 500px; 
+        padding: 0 20px 20px 20px;
+    }
+}
+
+.section-two {
+  border-bottom: 1px solid black;
+  margin-top: 36px;
+  padding-bottom: 47px;
+}
+
+@media (max-width: 768px) {
+    .section-two  {
+         padding: 0 5px 40px 5px; 
+         display: flex; 
+         width: 728px; 
+         margin: 20px 20px 0 20px; 
+      }
+  }
+
+  @media (max-width: 500px) {
+    .section-two {
+         padding: 0 10px 10px 10px; 
+         margin: 10px 10px 10px 10px;
+         display: flex; 
+         flex-flow: column wrap; 
+         width: 500px; 
+         
+      }
+  }
+
+
+.section-two div {
+  display: inline-block;
+  width: 280px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .section-two div {
+        padding: 0 5px; 
+        font-size: 16px; 
+    }
+}
+
+@media (max-width: 500px) {
+    .section-two div {
+        margin: 20px 0 20px 0;  
+        padding: 10px;
+        font-size: 16px; 
+        width: 480px; 
+     
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .section-two div h2 {
+        font-weight: bold; 
+         
+    }
+}
+
+.section-two div p {
+  line-height: 1.16;
+}
+
+address {
+  margin-top: 38px;
+}
+
+@media (max-width:768px) {
+    address {
+        padding: 0 25px 0px 25px;  
+        
+    }
+}
+
+@media (max-width:768px) {
+    address h2 {
+        font-weight: bold;  
+        
+    }
+}
+
+
+
+address div {
+  line-height: 1.16;
+}
+
+address div span {
+  display: inline-block;
+  margin: 17px 0 18px 0;
+}
+
+footer {
+  width: 100%;
+  height: 183px;
+  text-align: center;
+}
+
+
+
+
+footer p {
+  margin-top: 54px;
+  font-size: 14px;
+}
+
+/* service specific css code below 
+-----------------------------------------------------------------------------------------------------
+*/
+
+/* Header Section with image
+-----------------------------------------------------------------
+*/
+
+/* 
+ This is for the GREAT IDEA LOGO, had 
+to minus the pixel to move it up to be 
+equal with the navs, changed it's name 
+from index.html so it wouln't edit the
+index.html's logo 
+*/
+
+.toplogo {
+  margin-top: -10px;
+  margin-right: -15px;
+}
+
+/* 
+This is for the picture at the top of display, 
+minused the top margin to get it closer to the nav 
+*/
+
+img.services-header-img {
+  margin-top: -25px;
+  display: flex;
+  align-self: center;
+  margin: auto;
+  width: 890px;
+  padding-right: 20px;
+}
+
+/*
+-----------------------------------------------------------------
+*/
+/* 
+.serviceheader is the Service heading and paragraph 
+.heading-one is restyling the font of the h1 so it is bigger 
+*/
+
+.seviceheader {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  padding: 30px 5px;
+  margin: auto;
+  width: 890px;
+}
+
+h1.heading-one {
+  font-size: 150%;
+}
+
+/* this is a horizonatal line made like a box with a border and no height */
+
+hr.one {
+  height: 0px;
+  width: 880px;
+  border: 0.5px solid black;
+  margin-bottom: 30px;
+}
+
+/*
+-----------------------------------------------------------------
+*/
+/* 
+This is the main section of code, it is the 6 boxes that
+are in the middle of the page. Is is split between the 
+.parent-container(.boxs-together) and the .child-item(.box)
+.box is uniformed for all 6 of them, so I used it consistantly 
+*/
+
+.boxs-together {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 920px;
+  justify-content: ;
+}
+
+.box {
+  border: 1px solid black;
+  padding: 25px;
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-direction: column;
+  height: 220px;
+  width: 410px;
+}
+
+/* 
+This is for the Learn More HREF designs 
+*/
+
+.learn-more {
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px 20px;
+  width: 150px;
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+}
+
+/*
+-----------------------------------------------------------------
+*/
+/* 
+This is the last section that housed the Some Facts About Our Services
+heading/ paragraph/ unorderedline (.some-facts ) as well as the image
+(.services-info-img) that are located in the .parent-container 
+(.some-facts-together)
+*/
+
+/* this is a horizonatal line made like a box with a border and no height */
+
+hr.two {
+  height: 0px;
+  width: 880px;
+  border: 1px solid black;
+  margin-top: 30px;
+}
+
+.some-facts-together {
+  display: flex;
+  flex-direction: row wrap;
+  width: 880px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.some-facts {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  padding-left: 0px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: 300px;
+  width: 430px;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+li {
+  list-style-type: square;
+}
+
+.services-info-img {
+  display: flex;
+  align-content: flex-end;
+  margin: auto;
+  height: 300px;
+  width: 410px;
+  padding: 20px 0px;
+}
+
+/*
+-----------------------------------------------------
+*/
+/* This is the footer that held the last piece of information,
+which was simply the copyright tag.
+ */
+
+footer {
+  margin-top: 60px;
+}
+
+
+/*
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+*/
+/* Product Page */
+
+.product-heading {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 880px;
+  font-size: 72px;
+  color: white;
+  align-items: center;
+  
+}
+
+.product-heading:hover {
+  transform: scale(1.1);
+  transition: transform 1.05s ease-in-out;
+}
+
+.productstop {
+  display: flex;
+  margin-top: -100px;
+  height: 300px;
+  background-image: url("https://stevenscollege.edu/monkimage.php?mediaDirectory=mediafiles&mediaId=4866602&fileName=pexels-photo-90807-0-0-3200-0.jpg");
+  background-color: #cccccc;
+  background-size: cover;  
+  border-radius: 25px;
+
+}
+
+.productstop:hover {
+    filter: grayscale(100%);
+}
+
+.productsection {
+  padding-top: 40px; 
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 160px;
+  width: 880px;
+
+}
+
+.productheading {
+  font-size: 30px;
+}
+   
+hr {
+  border: .5px solid black;
+  height: 0px;
+  width: 880px
+}
+
+.product-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 880px;
+  height: 240px;
+  margin-top: 20px;
+
+}
+
+.it-manage-img {
+  display: flex; 
+  width: 400px;
+  justify-content: center; 
+  align-self: center;
+  height: 170px;
+  margin: auto;
+  padding: 20px;
+  
+  
+}
+
+.it-manage-img:hover {
+    transform: scale(1.2);
+    transition: 1.05s ease-in-out;
+    
+    
+}
+
+
+.Paragraph-section{
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 170px;
+  align-items: center;
+  padding: 20px; 
+  margin: auto;
+}
+
+.it-button {
+  border: .5 solid gray;
+  border-radius: 5px;
+  background-color: gray;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.it-button:hover {
+  background-color: aqua;
+  color: gray;
+}
+
+.virus-protection-img {
+  display: flex; 
+  width: 400px;
+  justify-content: center; 
+  align-self: center;
+  height: 200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.virus-protection-img:hover {
+  transform: scale(1.2);
+  transition: 1.05s ease-in-out;
+  
+  
+}
